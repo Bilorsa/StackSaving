@@ -1,6 +1,6 @@
 # StackSave - Android Studio Prototype
 
-University prototype for comparing store deals, Firebase authentication/cloud profiles, offline caching, settings, REST API integration, notifications, SSO and multilingual UI.
+
 
 ## Firebase setup
 1. Create a NEW Firebase project.
@@ -10,7 +10,7 @@ University prototype for comparing store deals, Firebase authentication/cloud pr
 5. Create Firestore Database and deploy `firestore.rules`.
 6. Sync Gradle in Android Studio.
 
-The Google Services Gradle plugin is applied only when `app/google-services.json` exists. Until then, the app runs in local demo mode so you can build and demonstrate the UI.
+
 
 ## Android Studio
 Use JDK 17. Open this folder, allow Gradle sync, then run on an emulator or Android phone.
@@ -25,3 +25,14 @@ Use JDK 17. Open this folder, allow Gradle sync, then run on an emulator or Andr
 - Firebase Cloud Messaging service scaffold marked POE-only
 - Local notification demonstration
 - English + isiZulu language selector
+
+
+## UI / Accessibility Improvements
+- Added a user-controlled **Dark mode** setting that persists across app launches.
+- Added **Reduce motion** accessibility support; main tab transitions and the profile avatar animation can be simplified.
+- Redesigned the **Profile** tab to match the Eats & Deals, Basket and Analytics tabs.
+- Profile now surfaces saved deals, total savings, savings rate, active deals, average deal price, shopping area, language, offline sync and notification settings.
+- Added editable display name support and account sync loading after Firebase login.
+- Added richer branded gradients, cards, icon treatments and subtle animation while keeping accessibility labels on interactive controls.
+
+**YouTube Link:** https://youtu.be/1q13_FuJwlc
